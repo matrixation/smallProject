@@ -12,7 +12,7 @@ body{
   display: block;
   width: 19px;
   height: 35px;
-  background: url(../../images/login/images/span-icoin.png)no-repeat -30px -458px;
+  background: url(../../images/login/span-icoin.png)no-repeat -30px -458px;
 }
 .login-photo{
   box-sizing: border-box;
@@ -69,7 +69,7 @@ body{
 }
 .login-list-one{
   display:inline-block;
-  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -4px ;
+  background: url(../../images/login/list-icoin.png)no-repeat -3px -4px ;
   width: 15px;
   height: 15px;
 }
@@ -77,13 +77,13 @@ body{
   display:inline-block;
   width: 15px;
   height: 15px;
-  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -37px;
+  background: url(../../images/login/list-icoin.png)no-repeat -3px -37px;
 }
 .login-list-three{
   display:inline-block;
   width: 15px;
   height: 15px;
-  background: url(../../images/login/images/list-icoin.png)no-repeat -3px -79px;
+  background: url(../../images/login/list-icoin.png)no-repeat -3px -79px;
 }
 
 /*遮罩层*/
@@ -125,7 +125,7 @@ body{
 .login_header_back{
     width: 60px;
     height: 4rem;
-    background: url("../../images/login/images/back.png") center center no-repeat;
+    background: url("../../images/login/back.png") center center no-repeat;
     background-size: 2rem 2rem;
     position: absolute;
     top: 0;
@@ -141,7 +141,7 @@ body{
 .login_logo{
     width: 100%;
     height: 115px;
-    background: url("../../images/login/images/logo.png") center no-repeat;
+    background: url("../../images/login/logo.png") center no-repeat;
     background-size: 140px 50px ;
 }
 .login_username_div,.login_password_div{
