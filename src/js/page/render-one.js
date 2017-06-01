@@ -35,7 +35,7 @@ $(function(){
             });
         },
         menuckick:function(){
-            $('.header-bottom-con,.i,.mark').click(function(){
+            $('.one-header-bottom-con,.i,.mark').click(function(){
                 $(".mark").toggle();
                 $('.allMenu').toggle();
             });
@@ -60,7 +60,7 @@ $(function(){
             }
         },
         one_lunbo:function(){
-            var lun=document.getElementById('lun');
+            var lun=document.getElementById('one-lunbo');
             var ali=lun.getElementsByTagName('li');
             var abtn=lun.getElementsByTagName('button');
             var _index=0;
