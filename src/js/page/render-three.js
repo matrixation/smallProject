@@ -4,10 +4,10 @@
 var $ = require("../lib/jquery-2.1.1.min.js");
 $(function() {
 	var page = {
-		init: function() {
+		initem: function() {
 			this.keys();
-			this.search();
-			this.order();
+			this.Search();
+			this.Searchorder();
 		},
 		keys: function() {
 			$("#search").keyup(function() {
@@ -25,7 +25,7 @@ $(function() {
 				}
 			})
 		},
-		search: function() {
+		Search: function() {
 			$(".cancel").on("click", function() {
 				$("#search").val("");
 				$(this).hide();
@@ -45,7 +45,7 @@ $(function() {
 				}
 			})
 		},
-		order: function() {
+		Searchorder: function() {
 			$(".selected-order").click(function() {
 				if($(".unselected-order").is(":hidden")) {
 					$(".triangle").removeClass().addClass("triangle triangle-up");
@@ -60,5 +60,5 @@ $(function() {
 			})
 		},
 	}
-	page.init();
+	page.initem();
 })
