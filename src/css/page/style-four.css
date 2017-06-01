@@ -1,6 +1,6 @@
 @import url('../lib/reset.css');
-@import url('./manage.css');
-@import url('./internet.css');
+@import url('manage.css');
+@import url('internet.css');
 body {
   font-family: arial, sans-serif;
   font-size: 16px;
@@ -9,7 +9,7 @@ body {
 body::-webkit-scrollbar {
   width: 0;
 }
-.header {
+.dingyue-header {
   width: 100%;
   height: 48px;
   background: #3e99f1;
@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
 }
-.header a {
+.dingyue-header a {
   position: absolute;
   left: 20px;
   top: 16px;
@@ -28,12 +28,12 @@ body::-webkit-scrollbar {
   background: url(../../images/four/ico.png) no-repeat;
   background-position: -15px -228px;
 }
-.header p {
+.dingyue-header p {
   color: #fff;
   text-align: center;
   line-height: 48px;
 }
-.header .succ {
+.dingyue-header .succ {
   position: absolute;
   right: 14px;
   top: 15px;
@@ -66,23 +66,23 @@ body::-webkit-scrollbar {
   height: 24px;
   background: url("../../images/four/Magnifier.png") no-repeat -1px -53px;
 }
-.main {
+.seach-main {
   background-color: #ffffff;
   border-top: 10px solid #f3f3f3;
 }
-.main .main1 {
+.seach-main .main1 {
   display: none;
   height: 46px;
   border-bottom: 1px solid #f3f3f3;
 }
-.main .main1 .main1-title {
+.seach-main .main1 .main1-title {
   float: left;
   font-size: 16px;
   color: #3b4352;
   line-height: 46px;
   margin-left: 10px;
 }
-.main .main1 .main1-arrow {
+.seach-main .main1 .main1-arrow {
   float: right;
   width: 8px;
   height: 8px;
@@ -93,37 +93,37 @@ body::-webkit-scrollbar {
   margin: 15px 11px 0 0;
   transform: rotate(45deg);
 }
-.main .main2 {
+.seach-main .main2 {
   display: none;
   height: 31px;
   margin: 0 0 0 10px;
 }
-.main .main2 .main2-title {
+.seach-main .main2 .main2-title {
   font-size: 15px;
   margin-top: 16px;
   color: #262b31;
   padding: 0 0 0 4px;
   border-left: 3px solid #239bf0;
 }
-.main .main2 .main2-content {
+.seach-main .main2 .main2-content {
   height: 46px;
   line-height: 46px;
   position: relative;
   font-size: 16px;
 }
-.main .main2 .main2-content .main2-content-left {
+.seach-main .main2 .main2-content .main2-content-left {
   font-size: 14px;
   color: #464e5c;
   padding-left: 8px;
   border-bottom: 1px solid #f6f6f6;
 }
-.main .main2 .main2-content .main2-content-right {
+.seach-main .main2 .main2-content .main2-content-right {
   position: absolute;
   right: 8px;
   top: 12px;
   opacity: 0;
 }
-.main .main2 .main2-content .main2-content-right + label {
+.seach-main .main2 .main2-content .main2-content-right + label {
   position: absolute;
   width: 22px;
   height: 22px;
@@ -132,20 +132,20 @@ body::-webkit-scrollbar {
   background: url("../../images/four/btn1.png") no-repeat 0 -41px;
   border-radius: 50%;
 }
-.main .main2 .main2-content .main2-content-right:checked + label {
+.seach-main .main2 .main2-content .main2-content-right:checked + label {
   background: url("../../images/four/btn1.png") no-repeat 0 -87px;
 }
-.mains {
+.seach-mains {
   padding: 0 16px;
   box-sizing: border-box;
 }
-.mains .seach {
+.seach-mains .seach {
   width: 100%;
   height: 44px;
   border: 2px solid #ededed;
   margin-top: 14px;
 }
-.mains .seach .bg {
+.seach-mains .seach .bg {
   width: 18px;
   height: 21px;
   display: inline-block;
@@ -155,82 +155,81 @@ body::-webkit-scrollbar {
   background: url(../../images/four/ico1.png) no-repeat;
   background-position: -1px -1px;
 }
-.mains .seach .place {
+.seach-mains .seach .place {
   color: #b9bbc1;
   margin-left: 10px;
   line-height: 44px;
   float: left;
 }
-.mains .tab .nav {
+.seach-mains .tab .nav {
   width: 100%;
   height: 44px;
   position: relative;
 }
-.mains .tab .nav .sp1 {
+.seach-mains .tab .nav .sp1 {
   width: 35px;
   display: inline-block;
   line-height: 42px;
   text-align: center;
   height: 42px;
 }
-.mains .tab .nav .sp1 + .sp1 {
+.seach-mains .tab .nav .sp1 + .sp1 {
   margin-left: 18px;
 }
-.mains .tab .nav .active {
+.seach-mains .tab .nav .active {
   color: #3e99f1;
   border-bottom: 2px solid #229bf1;
 }
-.mains .tab .nav .huan {
+.seach-mains .tab .nav .huan {
   font-size: 14px;
   position: absolute;
   right: 0;
   top: 14px;
 }
-.mains .tab .con {
+.seach-mains .tab .con {
   border-top: 1px solid #f3f3f4;
   display: none;
 }
-.mains .tab .con .med {
+.seach-mains .tab .con .med {
   width: 100%;
   height: 38px;
   border-bottom: 1px solid #f7f7f7;
 }
-.mains .tab .con .med .left {
+.seach-mains .tab .con .med .left {
   width: 50%;
   height: 38px;
   float: left;
   line-height: 38px;
 }
-.mains .tab .con .med .left .hai {
+.seach-mains .tab .con .med .left .hai {
   flex: left;
   color: #4e5256;
 }
-.mains .tab .con .med .left .ico {
+.seach-mains .tab .con .med .left .ico {
   width: 14px;
   height: 14px;
   display: inline-block;
-  /*border: 1px solid red;*/
   float: right;
   margin-top: 12px;
   margin-right: 5px;
   background: url(../../images/four/jia_02.png) no-repeat;
   background-size: 14px 14px;
 }
-.mains .tab .con .med .left .ico-jian {
+.seach-mains .tab .con .med .left .ico-jian {
   background: url(../../images/four/jia_05.png) no-repeat;
   background-size: 14px 14px;
 }
-.mains .tab .con .med .first {
+.seach-mains .tab .con .med .first {
   border-right: 1px solid #f7f7f7;
   box-sizing: border-box;
 }
-.mains .tab .con .med .right .hai {
+.seach-mains .tab .con .med .right .hai {
   margin-left: 7px;
 }
-.mains .tab .active {
+.seach-mains .tab .active {
   display: block;
 }
-.mains .footer {
+.seach-mains .footer {
   width: 100%;
   height: 38px;
   background: #229bf1;

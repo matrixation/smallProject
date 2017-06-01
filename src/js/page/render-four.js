@@ -1,6 +1,4 @@
-/**
- * Created by matrix on 2017/5/26.
- */
+var $ = require('jquery');
 $(function(){
 	var page={
 		controller:function(){
@@ -11,42 +9,42 @@ $(function(){
 		},
 //		tab切换
 		content:function(){
-			var $nav = $('.mains .tab .nav .sp1');
-			var $con = $('.mains .tab .con');
+			var $nav = $('.seach-mains .tab .nav .sp1');
+			var $con = $('.seach-mains .tab .con');
 			$nav.click(function() {
 				$nav.eq($(this).index()).addClass('active').siblings().removeClass('active');
 				$con.eq($(this).index()).addClass('active').siblings().removeClass('active');
 			})
 		},
 		ico:function(){
-			var $jian = $('.mains .tab .con .left .ico');
+			var $jian = $('.seach-mains .tab .con .left .ico');
 			$jian.click(function() {               
                 $(this).toggleClass('ico-jian');
 			})		
 		},
 		skip:function(){
-			$('.mains .seach').click(function() {
-				$('.mains').hide();
+			$('.seach-mains .seach').click(function() {
+				$('.seach-mains').hide();
 				$('.searchbox').show();
-				$('.header p').html("搜索订阅");
-				$('.header .succ').show();
-				$('.main').show();
+				$('.dingyue-header p').html("搜索订阅");
+				$('.dingyue-header .succ').show();
+				$('.seach-main').show();
 				
 			})
 	
-			$('.header .succ').click(function() {
-				$('.mains').show();
+			$('.dingyue-header .succ').click(function() {
+				$('.seach-mains').show();
 				$('.searchbox').hide();
-				$('.header p').html("订阅中心");
-				$('.header .succ').hide();
-				$('.main').hide();
+				$('.dingyue-header p').html("订阅中心");
+				$('.dingyue-header .succ').hide();
+				$('.seach-main').hide();
 			})
 		},
 		batch:function(){		
-			var $huan = $('.mains .tab .nav .huan');
-			var $con = $('.mains .tab .con');
+			var $huan = $('.seach-mains .tab .nav .huan');
+			var $con = $('.seach-mains .tab .con');
 			var daima = ["海外网", "南方都市报", "上海观察", "上海观察", "齐鲁网", "贵阳网", "舜网", "汉网", "太平洋时尚", "央视网", "21CN", "时尚网"];
-			var $coss = $('.mains .tab .con .med .left .hai');
+			var $coss = $('.seach-mains .tab .con .med .left .hai');
 			$huan.click(function() {
 					var num = "";
 					for(var i = 0; i < 12; i++) {
@@ -123,7 +121,7 @@ $(function(){
 
 
 $(function(){
-    var main_length=$('.main .list').length;
+    var main_length=$('.adm-main .list').length;
     $('.take').children('span').html(main_length);
     $(document).on('click','.list-left-btn1',function(){
         if($(this).attr('data-type')=='true'){
@@ -138,7 +136,7 @@ $(function(){
     });
     $(document).on('click','.list-del',function(){
         $(this).parent().remove();
-        var main_length=$('.main .list').length;
+        var main_length=$('.adm-main .list').length;
         $('.take').children('span').html(main_length);
     });
 });
